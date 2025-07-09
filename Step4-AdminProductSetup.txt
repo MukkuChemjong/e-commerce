@@ -1,0 +1,17 @@
+-       Create header, sidebar and layout jsx files in client/src/components/admin. The layout should hold the sidebar and header and an Outlet for children.
+        - header.jsx should have a logout button and a menu button (only visible when window is small)
+        - sidebar.jsx should have two sidebars. One is a Sheet react component retractable and is for smaller screens or minimized screens () and the other (a div element) is the default.
+                The open and close functionality of the sheet is handeled by open and onOpenChange attributes of the Sheet component. To keep track across multiple files, useState() is used.
+-        dashboard, features, products, order jsx files in client/src/pages/admin. The products page should have an Add new products button when clicked should open a Sheet component 
+        from the right. The product Sheet should have inputs for title, discription, category, price, brand, salePrice, stock and should be made using the createForm function.
+        - Create an ImageUpload function that has parameters: imageFile, setImageFile, imageFileUrl, setImageFileUrl, imageLoadingState, setimageLoadingState. Each of these variables should 
+        crated using useState. 
+-       Create client/src/components/admin/image-upload.jsx. The file should have an input that accepts images.
+-       Create server/helpers/cloudinary.js. This file configs cloudinary and creates a function to upload a file to cloudinary.
+-       Create server/controller/admin/products-controller.js. This file converts the file input by the user into base64 then a url to be used in cloudinary.js
+-       Create server/routes/admin/products-routes.js. This file creates a post request to connect to fronend.
+-       Create an api url in server.js for products-routes.
+-       In client/src/components/admin/image-upload.jsx, create a useEffect arrow fucntion that checks if the user has input a file. If the user has input a file, run the handleUploadImageToCloudinary
+        function. The function using axios conntects to the backend and send the image to cloudinary.
+
+-       Controller files interacted with the frontend.

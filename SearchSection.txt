@@ -1,0 +1,3 @@
+Slice, Controller, Routes
+-   If a function in the Slice is mentioned in the Controller, the function will extract data from the params rather than the request body.
+-   When creating a url for the Routes, if the function extracts data from the params then that needs to be stated in the url using a colon and a variable

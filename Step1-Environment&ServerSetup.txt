@@ -1,0 +1,16 @@
+- Create Server directories. The client directory will be created by renaming directory created s 
+- In the server directory, set up the environment using "npm init -y". This creates a node_modules folder that stores all the components and scripts
+- In the package.json folder within the scripts object, create a start and dev script. This will allow you use "npm run dev" to start the backend server
+- Create client/server.js
+- Import Express, Cors, Mongoose, Cookies-parser
+1. Connect to MongoDB using mongoose.connect({link to MongoDB})
+    .then(arrow function that points to a console log)
+    .catch(arrow function with error as param that points to a console log)
+2. Create two variables, app(one that stores express()) and PORT(usually 5000)
+3. Declare app.use() with cors({}) as param.
+    cors should have origin(front end link), 
+    methods(types of requests e.g. POST), 
+    headers(attributes assigned to variables or functions e.g. Content-Type), 
+    credentials(boolean used to check if user has access or not)
+4. Declare cookie-parser and express.json within app.use()
+5. Create a function with app.listen()

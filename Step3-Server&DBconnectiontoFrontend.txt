@@ -1,0 +1,8 @@
+-   Create server/models/User.js. Inside create a mongoose shcema that contains an object with keys. These are the key-values that are sent to MoongoDB.
+-   Create server/controller/auth/auth-controller.js. Inside create a registerUser promise function that will process values from the frontend.
+        registerUser extracts values from the request body and checks if email already exists in the DB. Next it hashes the password and creates a new Schema of the new user and saves it.
+-   Create another promise function called loginUser in auth-controller.js which checks if email and password match with one in database.
+        If email and passwords match, create a jsonwebtoken with _id, email, password, role.
+-   Create server/routes/auth/auth-routes.js. Create a post request for loginUser and registerUser.
+-   In server.js, connect an api url path to the routes file.
+-   In client/store/auth-slice/index.js, create thunks promises for both login and register. Then add extraReducers to the createSlice function which will take care of hte states of both of them.

@@ -1,0 +1,19 @@
+CreateAsyncThunk/axios.get
+-   In a Thunk function if we are using Axios.get, we usually do not need to add any params.
+
+CreateSlice(extraReducers)
+-   In this key, the value should be created for the Thunk Functions
+-   When exporting keys from CreateSlice function, create a variable then equal it to {slicename}.{slicekeyname}
+
+Table component
+-   To create a header, Table->TableHeader->Table Row->TableHead
+-   To create a body, Table->TableContent->TableRow->TableCell
+
+Ternary Functions(question and colon functions)
+-   Ternary Functions work exactly like if-else functions in terms of structure. The structure of how an if satement being nested within another one works the same in a ternary function.
+
+useStates and useSelectors
+-   useStates create Arrays while useSelectors create objects
+
+function creation
+-   When creating funcitons within a .jsx file, start the function with a "handle" to make naming homogeneous

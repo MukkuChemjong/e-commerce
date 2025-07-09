@@ -1,0 +1,12 @@
+URL PATH
+-   In main.jsx, wrap the <App /> with BrowserRouter. This allows Routes and Route react elements to work.
+-   In App.jsx, Create a Routes react element and next a Route for Auth, Admin, and user.
+-   Each of the Route react elements should have a path(a string that contains a url) and an element(the file that you want to connect the url to)
+- Create client/src/components create an auth, admin, user. These directories will hold the header, layout and sidebar among other components.
+    These components are going to be used and reused in the files in the pages directory.
+- Create client/src/pages create auth, admin, user directories. These directories will hold the main content.
+
+CHECK AUTHENTICATION
+-   Create client/src/common/check_auth.jsx. In the file, we create if statements that check for various states.
+-   If user is not authenticated, they must be navigated to login.jsx. When authenticated, if user is an admin they must be sent to dashboard else they are sent to shop home.
+-   We then wrap each layout with the check_auth function in App.jsx
