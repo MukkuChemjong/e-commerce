@@ -12,8 +12,4 @@ export default defineConfig({
     },
   },
   base: "/e-commerce/",
-  build: {
-    outDir: "dist",
-    emptyOutDir: true,
-  },
 });

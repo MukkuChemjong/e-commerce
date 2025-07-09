@@ -6,8 +6,10 @@ import store from "./store/store";
 import { Provider } from "react-redux";
 import { Toaster } from "./components/ui/sonner";
 
+const basename = import.meta.env.BASE_URL;
+
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
+  <BrowserRouter basename={basename}>
     <Provider store={store}>
       <App />
       <Toaster />
