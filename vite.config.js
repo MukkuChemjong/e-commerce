@@ -5,7 +5,17 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [
+    react(),
+    tailwindcss(),
+    react(),
+    {
+      name: "csp-inject",
+      transformIndexHtml(html) {
+        return html.replace("%VITE_CSP%", useCSP());
+      },
+    },
+  ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
