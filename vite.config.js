@@ -12,4 +12,7 @@ export default defineConfig({
     },
   },
   base: "/e-commerce/",
+  build: {
+    assetsInlineLimit: 4096, // Smaller files inline automatically
+  },
 });
