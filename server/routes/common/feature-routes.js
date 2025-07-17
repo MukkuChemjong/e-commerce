@@ -1,10 +1,10 @@
 import express from 'express';
-import { addFeatureImages, deleteFeatureImage, getFeatureImages } from '../../controller/common/feature-controller.js';
+import { addFeatureImage, deleteFeatureImage, getFeatureImages } from '../../controllers/common/feature-controller.js';
 
 
 const router = express.Router();
 
-router.post('/add', addFeatureImages);
+router.post('/add', addFeatureImage);
 router.get('/get', getFeatureImages);
 router.delete('/delete/:userId', deleteFeatureImage);
 
